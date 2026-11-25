@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1 class="game__title">Number Guessing Game</h1>
+    <p class="game__intro">I'm thinking of a number between 1 and 100. You have 7 tries.</p>
+
+    <p class="range" id="range" aria-live="polite">Between 1 and 100</p>
+
+    <form class="guess" id="guessForm" novalidate>
+      <label for="guessInput" class="guess__label">Your guess</label>
+      <div class="guess__row">
+        <input type="number" id="guessInput" min="1" max="100" inputmode="numeric" autocomplete="off">
+        <button type="submit" class="btn btn--primary" id="guessBtn">Guess</button>
+      </div>
+    </form>
+
+    <p class="message" id="message" aria-live="polite">Type a number and press Guess.</p>
+
+    <p class="attempts">Tries left: <strong id="triesLeft">7</strong></p>
+
+    <ul class="history" id="history" aria-label="Your previous guesses"></ul>
+
+    <button type="button" class="btn" id="newGameBtn">New game</button>
+  </main>
+
+  <footer class="credit">
+    <p>Developed by <strong>OLUFEMI BOLUWATIFE</strong></p>
+    <p>Matric No: <strong>240404010067</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
